@@ -2,7 +2,7 @@
 layout: post
 title:  "集成学习"
 date:   2019-01-03 10:43:45 +0800
-categories: [机器学习]
+categories: [machinelearning]
 ---
 
 # 集成学习，以提高机器学习结果
@@ -36,7 +36,7 @@ $$f(x) = 1/M\sum_{m=1}^{M}f_m(x)$$
 精度：0.64（+/- 0.01）[套袋树] 
 精度：0.59（+/- 0.07）[套袋K-NN]
 ```
-![图1](https://cdn-images-1.medium.com/max/2000/0*_qR1_TDjTpchTmDE.)
+![图1](http://wenhao-public.oss-cn-hangzhou.aliyuncs.com/blogs/el-p1.png)
 
 决策树显示轴的平行边界，而k = 1个最近邻点与数据点紧密配合。使用10个基础估计器训练Bagging集成模型，其具有0.8个子采样训练数据和0.8个子采样特征。
 
@@ -52,7 +52,7 @@ $$f(x) = 1/M\sum_{m=1}^{M}f_m(x)$$
 
 在**随机森林**中，整体中的每棵树都是从训练集中用替换（即自举样本）绘制的样本构建的。此外，不是使用所有特征，而是选择随机的特征子集，进一步随机化树。
 
-![图2](https://cdn-images-1.medium.com/max/1600/0*uGzCQfXlC-97VR10.)
+![图2](http://wenhao-public.oss-cn-hangzhou.aliyuncs.com/blogs/el-p2.png)
 
 因此，森林的偏差略有增加，但由于较少相关树的平均值，其方差减小，从而产生整体更好的模型。
 
@@ -65,13 +65,13 @@ $$f(x) = 1/M\sum_{m=1}^{M}f_m(x)$$
 
 下面的算法描述了最广泛使用的称为AdaBoost的增强算法， 它代表自适应增强。
 
-![图3](https://cdn-images-1.medium.com/max/1600/0*MmYd6wgreP-oBoKi.)
+![图3](http://wenhao-public.oss-cn-hangzhou.aliyuncs.com/blogs/el-p3.png)
 
 我们看到第一个基本分类器y1(x)是使用全部相等的加权系数训练的。在随后的增强轮次中，对于被错误分类的数据点和针对正确分类的数据点减少的加权系数增加。
 
 数量epsilon表示每个基本分类器的加权错误率。因此，加权系数α给予更准确的分类器更大的权重。
 
-![图4](https://cdn-images-1.medium.com/max/2000/0*yu6i_z6UwcQLHpua.)
+![图4](http://wenhao-public.oss-cn-hangzhou.aliyuncs.com/blogs/el-p4.png)
 
 AdaBoost算法如上图所示。每个基础学习器由具有深度1的决策树组成，因此基于特征阈值对数据进行分类，该特征阈值将空间划分为由与其中一个轴平行的线性决策表面分隔的两个区域。该图还显示了测试精度如何随着整体的大小以及训练和测试数据的学习曲线而提高。
 
@@ -90,8 +90,8 @@ $$F_m(x) = F_{m-1}(x)+argmin_h\sum_{i=1}^{n}L(y_i,F_{m-1}(x_i)+h(x_i))$$
 
 基本级别通常由不同的学习算法组成，因此堆叠集合通常是异构的。下面的算法总结了堆叠。
 
-![图5](https://cdn-images-1.medium.com/max/1600/0*GXMZ7SIXHyVzGCE_.)
-![图6](https://cdn-images-1.medium.com/max/2000/0*68zDJt_8RZ953Y5U.)
+![图5](http://wenhao-public.oss-cn-hangzhou.aliyuncs.com/blogs/el-p5.png)
+![图6](http://wenhao-public.oss-cn-hangzhou.aliyuncs.com/blogs/el-p6.png)
 
 以下精度在上图的右上图中可视化：
 ```
