@@ -4,6 +4,6 @@ title: About
 permalink: /about/
 ---
 
-I am freelance developer. Currently doing more in backend, focused in Python and Django.
+I am PaaS developer. Currently doing more in backend, focused in Container, Golang.
 
-email: agus[at]python.web.id
+email: chenwenhao03[at]gmail.com

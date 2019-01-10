@@ -27,6 +27,8 @@ urls:
       url: /about/
     - text: My Projects
       url: /projects/
+    - text: Outlier Analysis
+      url: /outlier_analysis/
 
 url: "https://wenhaochen.github.io"
 baseurl: ""
