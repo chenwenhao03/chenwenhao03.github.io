@@ -2,7 +2,7 @@
 layout: post
 title:  "集成学习"
 date:   2019-01-03 10:43:45 +0800
-categories: [machinelearning]
+categories: [machinelearning,translation]
 ---
 
 # 集成学习，以提高机器学习结果
@@ -117,4 +117,5 @@ $$F_m(x) = F_{m-1}(x)+argmin_h\sum_{i=1}^{n}L(y_i,F_{m-1}(x_i)+h(x_i))$$
 - S. Rachka, MLxtend library
 - Kaggle Winning Ensemble
 
+原文：https://blog.statsbot.co/ensemble-learning-d1dcd548e936
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>

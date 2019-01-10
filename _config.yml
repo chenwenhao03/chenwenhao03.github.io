@@ -19,14 +19,12 @@ social:
       link: "https://github.com/wenhaochen"
 
 share:
-  twitter_username: agusmakmun6
-  fb_appid: 1749788565247320
 
 urls:
     - text: About Me
       url: /about/
-    - text: My Projects
-      url: /projects/
+    - text: CSDN Blog
+      url: "https://blog.csdn.net/chenwenhao0304"
     - text: Outlier Analysis
       url: /outlier_analysis/
 
