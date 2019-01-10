@@ -1,1 +1,46 @@
-theme: jekyll-theme-minimal
+title: Wenhao Blogs
+description: My Blogs
+author: Agus Makmun
+github: https://github.com/wenhaochen
+about: Keep on moving up.
+disqus_shortname: stackproblems
+avatar_url: /static/img/taksim.jpg
+
+enableTags: true
+tagarray: []
+
+collections:
+  project:
+    output: true
+    permalink: /project/:path/
+
+social:
+    - icon: fa-github
+      link: "https://github.com/wenhaochen"
+
+share:
+  twitter_username: agusmakmun6
+  fb_appid: 1749788565247320
+
+urls:
+    - text: About Me
+      url: /about/
+    - text: My Projects
+      url: /projects/
+
+url: "https://wenhaochen.github.io"
+baseurl: ""
+paginate: 20
+per_page: 20
+paginate_path: "/page/:num/"
+markdown: kramdown
+gems:
+  - jekyll-paginate
+  - jekyll-gist
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: ['development']
